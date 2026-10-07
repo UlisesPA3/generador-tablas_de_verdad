@@ -1,5 +1,23 @@
 expresion = input("Ingresa una expresión lógica: ")
 
+variables = []
+
+if "P" in expresion:
+    variables.append("P")
+
+if "Q" in expresion:
+    variables.append("Q")
+
+if "R" in expresion:
+    variables.append("R")
+
+cantidad_variables = len(variables)
+combinaciones = 2 ** cantidad_variables
+
+print("\nVariables detectadas:", variables)
+print("Cantidad de variables:", cantidad_variables)
+print("Cantidad de combinaciones:", combinaciones)
+
 valores = [True, False]
 
 print("\nP\tQ\tR\tResultado")
